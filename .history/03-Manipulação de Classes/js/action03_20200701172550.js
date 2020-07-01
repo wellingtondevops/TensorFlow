@@ -9,10 +9,6 @@ function executar() {
 	const tensor2 = tf.tensor([[1],[2],[3],[4]]);
 	const squeeze = tensor2.squeeze(1)
 
-	const tensor3 = tf.tensor([1,2,3,4]);
-	const cumsum = tensor3.cumsum();
-
-
 	txt += 'expandDims:\n\n';
 	txt += 'Antes:\n';
 	txt += tensor1.toString() + '\n\n';
@@ -24,13 +20,6 @@ function executar() {
 	txt += tensor2.toString() + '\n\n';
 	txt += 'Depois:\n';
 	txt += squeeze.toString() + '\n\n';
-
-	txt += 'cumsum:\n\n';
-	txt += 'Antes:\n';
-	txt += tensor3.toString() + '\n\n';
-	txt += 'Depois:\n';
-	txt += cumsum.toString() + '\n\n';
-
 
 
 	
