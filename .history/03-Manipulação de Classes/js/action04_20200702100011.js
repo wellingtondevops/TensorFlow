@@ -13,10 +13,10 @@ function executar() {
 
 	const tfarray1 = tf.tensor([1,2,3,4]);
 	const tfarray2 = tf.tensor([[1,2],[3,4]]);
-	const tfarray3 = tf.tensor(2)
+	const tarray3 = tf.tensor(2)
 	const arraySync1 = tfarray1.arraySync();
-	const arraySync2 = tfarray2.arraySync();
-	const arraySync3 = tfarray3.arraySync();
+	const arraySync2 = tfarray2.dataSync();
+	const arraySync3 = tarray3.dataSync();
 
 	txt += 'DataSync\n\n';
 	txt += "Antes:\n";
@@ -35,9 +35,9 @@ function executar() {
 	txt += tfarray2.toString() + '\n\n';
 	txt += tfarray3.toString() + '\n\n';
 	txt += "Depois:\n";
-	txt +=  JSON.stringify(arraySync1) + '\n\n';
-	txt +=  JSON.stringify(arraySync2) + '\n\n';
-	txt +=  JSON.stringify(arraySync3) + '\n\n';
+	txt += '[' + arraySync1.toString() + ']\n\n';
+	txt += '[' + arraySync2.toString() + ']\n\n';
+	txt += '[' + arraySync3.toString() + ']\n\n';
 
 
 

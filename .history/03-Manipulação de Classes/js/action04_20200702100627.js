@@ -15,8 +15,8 @@ function executar() {
 	const tfarray2 = tf.tensor([[1,2],[3,4]]);
 	const tfarray3 = tf.tensor(2)
 	const arraySync1 = tfarray1.arraySync();
-	const arraySync2 = tfarray2.arraySync();
-	const arraySync3 = tfarray3.arraySync();
+	const arraySync2 = tfarray2.dataSync();
+	const arraySync3 = tfarray3.dataSync();
 
 	txt += 'DataSync\n\n';
 	txt += "Antes:\n";
