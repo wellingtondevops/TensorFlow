@@ -74,7 +74,6 @@ function executar() {
 	txt += 'Antes:\n';
 	txt += tensor11.toString() + '\n\n';
 	txt += tensor12.toString() + '\n\n';
-	txt += tensor13.toString() + '\n\n';
 	txt += 'Depois:\n';
 	txt += addN.toString() + '\n\n';
 
