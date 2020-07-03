@@ -17,14 +17,6 @@ function executar() {
 	const tensor6 = tf.tensor([2,3,2,2]);
 	const mod = tensor5.mod(tensor6);
 
-	const tensor7 = tf.tensor([2,3]);
-	const tensor8 = tf.tensor([3,2]);
-	const pow = tensor7.pow(tensor8);
-
-	const tensor9 = tf.tensor([2,7]);
-	const tensor10 = tf.tensor([1,2]);
-	const squaredDifference = tensor9.squaredDifference(tensor10);
-
 	txt += 'maximum:\n\n';
 	txt += 'Antes:\n';
 	txt += tensor1.toString() + '\n\n';
@@ -45,21 +37,6 @@ function executar() {
 	txt += tensor6.toString() + '\n\n';
 	txt += 'Depois:\n';
 	txt += mod.toString() + '\n\n';	
-	
-	txt += 'pow:\n\n';
-	txt += 'Antes:\n';
-	txt += tensor7.toString() + '\n\n';
-	txt += tensor8.toString() + '\n\n';
-	txt += 'Depois:\n';
-	txt += pow.toString() + '\n\n';	
-
-	txt += 'squaredDifference:\n\n';
-	txt += 'Antes:\n';
-	txt += tensor9.toString() + '\n\n';
-	txt += tensor10.toString() + '\n\n';
-	txt += 'Depois:\n';
-	txt += squaredDifference.toString() + '\n\n';	
-
 
 
 
